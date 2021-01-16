@@ -2,6 +2,7 @@ import getopt
 import web
 import sys
 #from web.wsgiserver import CherryPyWSGIServer
+from cheroot.wsgi import Server as CherryPyWSGIServer
 #from cherrypy import wsgiserver
 from cheroot import wsgi # This replaces the 2 above
 from flask import Flask, request, request_started
